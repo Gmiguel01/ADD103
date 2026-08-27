@@ -1,0 +1,19 @@
+body {
+    background-image: url("Background.jpg");
+    background-size: cover;
+    background-color: #0f0;
+}
+/* Ugly heading color*/
+h1 {
+    color:rgb(238,130,238)
+}
+h2 {
+    color:#ffff00;
+}
+/*quote colors*/
+blockquote {
+    background-color:rgba(255,69,0,0.5);
+    border-left: 10px dashed purple;
+    padding: 18px;
+    margin: 20px;
+}
