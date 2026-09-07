@@ -1,0 +1,16 @@
+body{
+    background-color: lightskyblue;
+    color: black;    
+}
+.gallery-pic{
+    max-width: 300px;
+    border-radius: 8px;
+    margin: auto;
+}
+.btn-link {
+    background-color: #b972f4;
+    color: white;
+    padding: 5px  10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
