@@ -1,0 +1,18 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+    color: #b2543d;
+    padding: 20px;
+}
+th, td{
+    border: 1px solid #dddddd;
+    padding: 20px;
+    text-align: left;
+}
+.birthday{
+    background-color: #6deaea;
+}
+img{
+    max-width: 30px; 
+    height: auto;
+}
