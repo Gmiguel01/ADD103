@@ -1,0 +1,17 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+    line-height: 1.6;
+}   
+ol{
+    list-style-type: upper-roman;
+    background-color: #5a4862;
+    padding: 30px;
+}
+ul{
+    list-style-type: circle;
+    background-color: #70964b;
+}
+ul.a{
+    list-style-type: disc;
+}
