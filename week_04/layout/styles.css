@@ -1,0 +1,127 @@
+/* ==========================================
+   STYLESHEET SECTION ORDER (standard convention)
+   1. Universal Reset   — fix browser defaults first
+   2. Custom Properties — declare variables before anything uses them
+   3. Base Styles       — plain element styles (body, code, a, headings)
+   4. Layout            — structural rules (header, main, aside, footer)
+   5. Components        — reusable patterns (cards, tooltips)
+   This order is deliberate: each section can safely reference what came before it.
+   ========================================== */
+*{
+    box-sizing: border-box;
+}
+:root {
+    --brand-color: #e00000;
+    --highlight: #ff3333;
+    --light-text: #ffffff;
+    --dark-text: #222222;
+    --near-black: #111111;
+    --font-body: Arial, Helvetica, Sans-serif;
+    --site-wide-font-size: 16px;
+    --gap: 8pc;
+    --card-radius: 8px;
+    --border-color: #dddddd;
+}
+body{
+    font-family: var(--font-body);
+    color: var(--dark-text);
+    margin: 0;
+}
+header{
+    background-color: var(--near-black);
+    color: var(--light-text);
+    text-align: center;
+    padding:  30px;
+    border-bottom: 5px solid var(--brand-color);
+    text-shadow: 2px 2px 6px #000000;
+}
+header h1{
+    margin: 0;
+    color: var(--light-text);
+    font-size: 38px;
+}
+header p{
+    margin: 0;
+    color: var(--light-text);
+    font-size: 18px;
+}
+main{
+    font-family: var(--font-body);
+    overflow: hidden;
+}
+main h2{
+    text-align: center;
+    color: var(--dark-text);
+    font-size: 30px;
+}
+aside{
+    float: right;
+    width: 25%;
+    background-color: var(--highlight);
+    color: var(--dark-text);
+    border-radius: var(--card-radius);
+    border-left: 6px solid var(--brand-color);
+}
+footer{
+    background-color: var(--dark-text);
+    color: var(--light-text);
+    text-align: center;
+    padding: 25px;
+}
+footer a{
+    color: var(--highlight);
+}
+.column-card{
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    border: 2px solid var(--border-color);
+    border-radius: var(--card-radius);
+    border-top: 5px solid var(--brand-color);
+    padding: 25px;
+    margin: var(--gap);
+    text-align: left;
+}
+.column-card h3{
+    color: var(--dark-text);
+    font-size: 25px;
+}
+.column-card p{
+    color: var(--dark-text);
+}
+.column-card img{
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+    display: block;
+    margin: 0 auto 10px;
+
+}
+.tooltip{
+    position: relative;
+    display: inline-block;
+    background-color: var(--near-black);
+    color: var(--light-text);
+    border-left: 3px solid var(--brand-color);
+    cursor: help;
+}
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    opacity: 0;
+    width: 200px;
+    background-color: var(--near-black);
+    color:var(--light-text);
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    transition: opacity 0.3s;
+    bottom: 130%;
+    left: 50%;
+    margin-left: -110px;
+}
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
