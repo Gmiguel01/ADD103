@@ -1,0 +1,28 @@
+body{
+    background-color: bisque;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+}
+.gallery-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background-color: bisque;
+}
+.card{
+    background-color: aliceblue;
+    width: 250px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.card img{
+    max-width: 100%;
+    height: auto;
+}
+    
