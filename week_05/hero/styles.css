@@ -1,0 +1,67 @@
+﻿* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+  background-color: #f4f0fa;
+  color: #2c2c2c;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  background-color: #555934;
+  color: #f9f5f0;
+  min-height: 400px;
+}
+
+.hero-text {
+  flex-basis: 50%; 
+  flex-grow: 1;
+  padding: 48px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 16px;
+  color: #F2E6D8;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.hero-img {
+  flex-basis: 50%;
+  flex-grow: 1; 
+}
+
+.hero-img img {
+  width: 100%;
+  display: block;
+}
+
+.button-group {
+  display: flex; 
+  align-self: flex-start; 
+}
+
+.button-group .btn {
+  background-color: #593E2E; 
+  color: #F2E6D8; 
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.button-group .btn:hover {
+  background-color: #8C5B3E;
+}

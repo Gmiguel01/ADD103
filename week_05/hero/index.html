@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Items and Nesting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius enim delectus ipsam qui cum commodi tenetur mollitia dolores itaque consectetur tempora assumenda voluptatum quo, corporis nulla. Labore provident et numquam.</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolorum magni recusandae. Fugiat inventore magni minima in corrupti porro modi eaque dolore deleniti. Facilis saepe perspiciatis voluptatem libero. Ab, quod.
+            </p>
+    
+            <!-- ?? warning: .button-group below is the NESTING DEMO from the lesson.
+                 YOUR ASSIGNMENT: just put a plain <button> inside .hero-text
+                 with no wrapper — it stays left by default. Trick question!
+                 The wrapper is here to demonstrate a flex item becoming a
+                 flex container (the nesting concept). -->
+            <div class="button-group">
+                <!-- ?? href="#main" is an INTERNAL LINK (anchor link).
+                   The # means "find an id on THIS page."
+                   Clicking jumps to the element with id="main" — no new page loads.
+                   YOUR ASSIGNMENT: use <button>Your Text</button> here instead. -->
+                <a href="#main" class="btn">main</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="../images/location_one.jpg" alt="traditional east asian building with old pine tree and mountainous backdrop" />
+        </div>
+    </div>
+<footer>
+    <p><a href="../../index.html">Back to Student Portal</a></p>
+</footer>
+</body>
+</html>
