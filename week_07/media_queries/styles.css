@@ -1,0 +1,147 @@
+/* AI-generated color palette */
+:root {
+    --color-ink: #1F2933;
+    --color-slate: #52606D;
+    --color-cloud: #F0F4F8;
+    --color-white: #FFFFFF;
+    --color-teal: #2A9D8F;
+    --color-blue: #3A86FF;
+    --color-gold: #F4A261;
+    --color-coral: #E76F51;
+    --color-plum: #8E6C88;
+}
+
+/* AI generated standard CSS reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*----Custom CSS-----*/
+
+/* work outward from phone(defualt), tablet, desktop */
+
+body{
+    background: var(--color-gold);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--color-ink);
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    background-color: var(--color-slate);
+    color: var(--color-white);
+    padding: 10px;
+    text-align: center;
+    margin-top: 5px;
+    border-bottom: 3px solid var(--color-blue);
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 1lr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+}
+
+.avatar{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    align-self: center;
+}
+.info h1{
+    font-size: 28px;
+}
+.info h2{
+    font-size: 18px;
+}
+/* AI-generated computer breakpoint */
+@media screen and (min-width: 700px) {
+    body{
+        background: var(--color-plum);
+    }
+    .banner{
+        grid-template-columns: 1fr 1fr;
+    }
+    .card{
+        flex-direction: row;
+        text-align: left;
+        align-items:center;
+    }
+    .avatar{
+        margin-right: 20px;
+        margin-bottom: 0;
+
+    }
+}
+
+
